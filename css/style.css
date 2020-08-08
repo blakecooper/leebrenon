@@ -15,6 +15,7 @@ body {
   background-size: cover;
   -o-background-size: cover;
   color: white;
+	font-family: 'Work Sans', sans-serif;
 }
 
 a:link, a:visited {
@@ -27,6 +28,10 @@ img {
 	padding: 50px;
 }
 
+h1 {
+	font-weight: 600;
+}
+
 .row {
 	position: absolute;
 	top: 40%;
@@ -34,6 +39,16 @@ img {
 	transform: translateY(-40%);
 }
 
+@media only screen and (max-width: 992px) {
+	.row {
+		margin: auto;
+		width: 90%;
+	}
+
+	img {
+		padding: 30px;
+	}
+}
 .btn-success {
 	background-color: var(--dark-green);
 }
