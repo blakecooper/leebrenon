@@ -16,15 +16,15 @@ body {
   -o-background-size: cover;
   color: white;
 	font-family: 'Work Sans', sans-serif;
+	font-size: large;
 }
 
 a:link, a:visited {
 	color: var(--light-green);
 }
 
-img {
+.logo {
 	width: inherit;
-	height: 100%;
 	padding: 50px;
 }
 
@@ -34,27 +34,41 @@ h1 {
 
 .row {
 	position: absolute;
+	left: 20%;
+	right: 20%;
 	top: 40%;
 	-ms-transform: translateY(-40%);
 	transform: translateY(-40%);
 }
 
-@media only screen and (max-width: 800px) {
-	img {
-		padding: 10px;
-	}
+.social {
+	padding-top: 5px;
+}
+
+.padded {
+	padding-left: 50px;
+	padding-right: 50px;
 }
 
 @media only screen and (max-width: 992px) {
 	.row {
-		margin: auto;
-		width: 90%;
+		position: relative;
+		top: 0px;
+		left: 0px;
+		right: 0px;
+		-ms-transform: translateY(0%);
+		transform: translateY(0%);
 	}
 
-	img {
-		padding: 30px;
-	}
+	.padded-mobile {
+		padding-left: 50px;
+		padding-right: 50px;
 }
+
 .btn-success {
 	background-color: var(--dark-green);
+}
+
+.clearfix {
+	overflow: auto;
 }
