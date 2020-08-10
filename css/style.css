@@ -79,6 +79,11 @@ a.welllink:link, hover {
 	.padded-mobile {
 		padding-left: 50px;
 		padding-right: 50px;
+	}
+
+	.well {
+		font-size: 1em;
+	}
 }
 
 .btn-success {
